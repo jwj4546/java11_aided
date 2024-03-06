@@ -1,0 +1,17 @@
+package sec1;
+
+public class ExceptionExam2 {
+	public static void main(String[] args) {
+		String name = null;
+		System.out.println("name : "+name);
+		//실제 처리할 문장(try)이 예외가 발생하면, 예외처리 문장(catch)을 실행한다. 
+		try {
+			//실제 처리할 문장
+			System.out.println(name.toString());					
+		}	catch(NullPointerException e) {
+				e.printStackTrace();
+		}	catch(Exception e) {
+			System.out.println("정체를 알 수 없는 예외 발생");
+		}
+	}
+}
