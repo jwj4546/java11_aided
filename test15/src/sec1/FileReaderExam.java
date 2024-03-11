@@ -14,6 +14,7 @@ public class FileReaderExam {
 			while((line = fr.readLine()) != null) {
 				System.out.println(line);
 			}
+			fr.close();
 		}
 	}
 }

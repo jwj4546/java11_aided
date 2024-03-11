@@ -20,19 +20,19 @@ public class CalendarExam {
 		int ampm = today.get(Calendar.AM_PM);					
 		
 		int timeZone = today.get(Calendar.ZONE_OFFSET);					//밀리초 => 시간(/1000/60/60)
-		int lastDate = today.getActualMaximum(Calendar.DATE);
+		int lastDate = today.getActualMaximum(Calendar.DATE);					//마지막 날
 		int firstDate = today.getActualMinimum(Calendar.DATE);
 		
 		System.out.println("현재 년도 : "+year);
 		System.out.println("현재 월 : "+month);
 		System.out.println("현재 일 : "+day);
 		
-		System.out.println("현재 년도의 1월 1일로 부터 오늘 까지 걸린 날짜 : "+doy+"일 째 날");
+		System.out.println("오늘은 "+year+"년의 "+doy+"일 째 날");
 		System.out.println("오늘은 " +month+"월의 "+dom+"번째 날");
 		System.out.println("오늘은 이번 주의 "+dow+"번째 날");
 		
-		String[] wk = {"", "일요일", "월요일", "화요일", "수요일", "목요일", "금요일", "토요일"};
-		System.out.println("오늘은 "+wk[dow]+"입니다.");
+		String[] wk = {"일요일", "월요일", "화요일", "수요일", "목요일", "금요일", "토요일"};
+		System.out.println("오늘은 "+wk[dow-1]+"입니다.");
 		
 		System.out.println("현재 시간(24시간제) - "+hour24+" : "+min+" : "+sec);
 		if(ampm == 0) {

@@ -2,7 +2,7 @@ package sec2;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-
+//자주 사용하는 정규 표현식(비밀번호, 이메일, 휴대폰 번호, 주민번호, 우편번호)
 public class PatternExam2 {
 	public static void main(String[] args) {
 

@@ -10,14 +10,14 @@ public class FileExam4 {
 		File file2 = new File("b.txt");
 		
 		if(file1.createNewFile()) {
-			System.out.println("File Created Success");
+			System.out.println("File1 Created Success");
 		} else {
-			System.out.println("File already exists");
+			System.out.println("File1 already exists");
 		}
 		if(file2.createNewFile()) {
-			System.out.println("File Created Success");
+			System.out.println("File2 Created Success");
 		} else {
-			System.out.println("File already exists");
+			System.out.println("File2 already exists");
 		}
 	}
 }
