@@ -2,6 +2,7 @@ package sec2;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.IOException;
 
 public class FinallyExam {
@@ -20,7 +21,22 @@ public class FinallyExam {
 					e.printStackTrace();
 				}
 			}
-			System.out.println("성공이든 실패든 항상 수행");
+			System.out.println("성공이든 실패든 항상 수행1");
+		}
+		FileOutputStream fos = null;
+		try {
+			fos = new FileOutputStream("b.txt");
+		} catch(FileNotFoundException e) {
+			System.out.println(e);
+		} finally {
+			if(fos!=null) {
+				try {
+					fos.close();
+				} catch(IOException e) {
+					e.printStackTrace();
+				}
+			}
+			System.out.println("성공이든 실패든 항상 수행2");
 		}
 		System.out.println("예외 처리의 다음 문장");
 	}

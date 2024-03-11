@@ -9,9 +9,9 @@ public class ExceptionExam6 {
 			e.printStackTrace();
 		} catch(Exception e) {
 			System.out.println("원인 불명");
+			e.printStackTrace();
 		} finally {
 			System.out.println("종료");
 		}
-		
 	}
 }

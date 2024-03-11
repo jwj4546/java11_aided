@@ -11,7 +11,7 @@ public class ThrowsExam {
 		String relativaPath = "./a.txt";					//상대경로 -> 현재 디렉토리
 		String relativaPath2 = "../a.txt";					//상대경로 -> 상위 디렉토리
 		String relativaPath3 = "../../a.txt";					//상대경로 -> test14 디렉토리 안에 
-		fis = new FileInputStream("d:\\cho\\java2\\test14\\bin\\sec2\\a.txt");
+		fis = new FileInputStream(absolutePath);
 		if(fis!=null) {
 			fis.close();
 		}

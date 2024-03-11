@@ -8,10 +8,10 @@ public class ExceptionExam4 {
 		
 		try {
 			val1 = Integer.parseInt(data1);
-			val2 = Integer.parseInt(data2);	
+			val2 = Integer.parseInt(data2);					//숫자 정수로 변환할 수 없는 문자열
 			
 			System.out.println(val1);
-			System.out.println(val2);					//숫자 정수로 변환할 수 없는 문자열
+			System.out.println(val2);					
 			System.out.println(val1+20);
 		} catch(NumberFormatException e) {
 			System.out.println("숫자 형식으로 처리할 수 없는 데이터");

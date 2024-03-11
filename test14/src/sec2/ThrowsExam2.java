@@ -8,7 +8,7 @@ public class ThrowsExam2 {
 		int[] arr = {100, 80, 90};
 		arrayPassing(arr);
 	}
-	public static void nullPassing(String name) {
+	public static void nullPassing(String name) throws NullPointerException {
 		System.out.println(name);
 	}
 	public static void arrayPassing(int[] arr) throws ArrayIndexOutOfBoundsException {

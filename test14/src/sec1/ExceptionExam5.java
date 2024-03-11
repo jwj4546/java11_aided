@@ -20,7 +20,7 @@ public class ExceptionExam5 {
 			System.out.println("형제나 다른 패키지에 있는 클래스는 형 변환 불가");
 			e.printStackTrace();
 		} catch(Exception e) {
-			System.out.println();
+			System.out.println("알 수 없는 예외");
 			e.getMessage();
 		} finally {
 			System.out.println("작업 종료");

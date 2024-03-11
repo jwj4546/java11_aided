@@ -6,8 +6,8 @@ public class ExceptionExam3 {
 		int i = 0;
 		while(i<=3) {
 			try {
-			System.out.println(nArr[i]);
-			i++;
+				System.out.println(nArr[i]);
+				i++;
 			} catch(ArrayIndexOutOfBoundsException e) {
 				e.getMessage();
 				break;
