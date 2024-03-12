@@ -4,7 +4,7 @@ package sec1;
 //GPL			o					o					o						o							o								x
 //LGPL		o					o					o						o							o								o
 //MPL			o					o					o						o							o								o
-//BSD		o					o					o						o							x								o
+//BSD			o					o					o						o							x								o
 //Apache	o					o					o						o							x								o
 //MIT			o					o					o						o							x								o
 public class OssExam {
