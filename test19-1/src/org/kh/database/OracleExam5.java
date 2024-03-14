@@ -101,10 +101,10 @@ public class OracleExam5 {
 			if(i>0) {
 				System.out.println(i+"건 삭제 성공");
 			} else {
-				System.out.println("SQL 구문 오류");
+				System.out.println("SQL 처리 실패");
 			}
 		} catch (SQLException e) {
-			System.out.println("SQL 처리 실패");
+			System.out.println("SQL 구문 오류");
 			e.printStackTrace();
 		} finally {
 			oracle.close(pstmt, con);
